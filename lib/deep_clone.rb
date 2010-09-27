@@ -1,7 +1,7 @@
 require 'active_record'
 
 module DeepClone
-  def deep_clone
+  def deep_clone(options={})
     kopy = self.clone
     
     if options[:except]
