@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 1.3.7"
   
   # If you have other dependencies, add them here
-  s.add_dependency "active_record", ">= 2.3"
+  s.add_dependency "activerecord", ">= 2.3"
 
   # If you need to check in files that aren't .rb files, add them here
   s.files         = `git ls-files`.split("\n")
