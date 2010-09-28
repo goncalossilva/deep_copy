@@ -1,14 +1,14 @@
 # coding: UTF-8
 
 Gem::Specification.new do |s|
-  s.name              = "deep_clone"
+  s.name              = "deep_copy"
   s.version           = "0.0.1"
   s.platform          = Gem::Platform::RUBY
   s.authors           = ["Gonçalo Silva", "Jan De Poorter"]
   s.email             = ["goncalossilva@gmail.com", "github@defv.be"]
-  s.homepage          = "http://github.com/goncalossilva/deep_clone"
-  s.summary           = "Deep clone for Active Record"
-  s.description       = "A method to deep clone AR objects, including its associations"
+  s.homepage          = "http://github.com/goncalossilva/deep_copy"
+  s.summary           = "Deep copy for Active Record"
+  s.description       = "A method to deep copy AR objects, including its associations"
   s.rubyforge_project = s.name
 
   s.required_rubygems_version = ">= 1.3.7"

@@ -1,8 +1,8 @@
 require 'active_record'
 
-module DeepClone
-  def deep_clone(options={})
-    kopy = self.clone
+module DeepCopy
+  def deep_copy(options={})
+    kopy = clone
     
     if options[:except]
       Array(options[:except]).each do |attribute|
@@ -37,4 +37,4 @@ module DeepClone
   end
 end
 
-ActiveRecord::Base.extend DeepClone
+ActiveRecord::Base.extend DeepCopy
