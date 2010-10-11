@@ -11,11 +11,11 @@ on your environment.rb
 ## Usage
 
 Pick any Active Record object and call _deep\_copy_ on it. You can also include associations and except fields, like this:
-    new_user = user.clone :include => :car, :exclude => [:name, {:car => [:number_of_wheels, :number_of_accidents]}]
+    new_user = user.deep_copy :include => :car, :exclude => [:name, {:car => [:number_of_wheels, :number_of_accidents]}]
 In this example we're cloning a user, including its car. However, we're not cloning the user's name nor are we cloning his car's _number\_of\_wheels_ and _number\_of\_accidents_.
 
-You can also go deeper (pun intended). In this example, we'll clone a lot of people (excluding their names):
-    new_son = son.clone :include => [{:parent => grand_parent}, :siblings], :exclude => [:name, {:parent => [:name, :grand_parent => :name]}, {:siblings => :name}]
+You can also go deeper (bad pun intended). In this example, we'll clone a lot of people (excluding their names):
+    new_son = son.deep_copy :include => [{:parent => grand_parent}, :siblings], :exclude => [:name, {:parent => [:name, :grand_parent => :name]}, {:siblings => :name}]
     
 ### Acknowledgements
 
