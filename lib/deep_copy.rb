@@ -33,6 +33,8 @@ module DeepCopy
         opts.merge!(:except => deeper_exceptions) unless deeper_exceptions.blank?
         
         association_reflection = self.class.reflect_on_association(association)
+        next if association_reflection.nil? # invalid association
+        
         cloned_object = case association_reflection.macro
                         when :belongs_to, :has_one
                           self.send(association) && self.send(association).deep_copy(opts)

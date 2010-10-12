@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name              = "deep_copy"
-  s.version           = "0.0.1"
+  s.version           = "0.0.2"
   s.platform          = Gem::Platform::RUBY
   s.authors           = ["Gonçalo Silva", "Jan De Poorter"]
   s.email             = ["goncalossilva@gmail.com", "github@defv.be"]
