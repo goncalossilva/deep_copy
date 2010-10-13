@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    deep_copy (0.0.1)
+    deep_copy (0.0.2)
       activerecord (>= 2.3)
 
 GEM
