@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name              = "deep_copy"
-  s.version           = "0.0.2"
+  s.version           = "0.0.3"
   s.platform          = Gem::Platform::RUBY
   s.authors           = ["Gonçalo Silva", "Jan De Poorter"]
   s.email             = ["goncalossilva@gmail.com", "github@defv.be"]
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 1.3.7"
   
   # If you have other dependencies, add them here
-  s.add_dependency "activerecord", ">= 2.3"
+  s.add_dependency "activerecord", "~> 2.3"
 
   # If you need to check in files that aren't .rb files, add them here
   s.files         = `git ls-files`.split("\n")
